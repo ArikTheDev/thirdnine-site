@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Third Nine — Reliability engineering for small software teams</title>
+<meta name="description" content="Reliability audits and monthly reliability support for software teams without an SRE, from an ex-Microsoft engineer in Dallas. Audits from $2,500. Plans from $1,500 a month.">
+<link rel="canonical" href="https://thirdnine.dev/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#fafbfc" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f161e" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Third Nine">
+<meta property="og:title" content="Third Nine — Reliability engineering for small software teams">
+<meta property="og:description" content="Reliability audits and monthly support for software teams without an SRE, from an ex-Microsoft reliability engineer.">
+<meta property="og:url" content="https://thirdnine.dev/">
+<meta property="og:image" content="https://thirdnine.dev/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Third Nine: keep your product up 99.9% of the time.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Third Nine",
+  "url": "https://thirdnine.dev/",
+  "email": "hello@thirdnine.dev",
+  "description": "Reliability audits and monthly reliability support for small software teams, specializing in Azure and .NET.",
+  "areaServed": ["Dallas, Texas", "United States"],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Dallas",
+    "addressRegion": "TX",
+    "addressCountry": "US"
+  },
+  "priceRange": "$1,500 to $5,000 per month"
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header" id="top">
+  <div class="wrap header-row">
+    <a class="brand" href="#top">
+      <svg class="brand-mark" viewBox="0 0 22 22" aria-hidden="true">
+        <circle class="mark-dot" cx="3.5" cy="3.5" r="2.6"></circle>
+        <circle class="mark-dot" cx="11" cy="3.5" r="2.6"></circle>
+        <circle class="mark-dot" cx="18.5" cy="3.5" r="2.6"></circle>
+        <circle class="mark-dot" cx="3.5" cy="11" r="2.6"></circle>
+        <circle class="mark-dot" cx="11" cy="11" r="2.6"></circle>
+        <circle class="mark-dot" cx="18.5" cy="11" r="2.6"></circle>
+        <circle class="mark-dot-third" cx="3.5" cy="18.5" r="2.6"></circle>
+        <circle class="mark-dot-third" cx="11" cy="18.5" r="2.6"></circle>
+        <circle class="mark-dot-third" cx="18.5" cy="18.5" r="2.6"></circle>
+      </svg>
+      Third Nine
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="#audit">Audit</a></li>
+        <li><a href="#plans">Plans</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#faq">Questions</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-primary btn-small" href="mailto:hello@thirdnine.dev?subject=Free%2030-minute%20reliability%20call">Book a call</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <h1 id="hero-title">Your product, up 99.9% of the time.</h1>
+        <p class="lede">Reliability audits and monthly support for software teams that don’t have an SRE yet, from an engineer who helped take a 100,000-call-a-day Microsoft service from 95% to 99.9%.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="mailto:hello@thirdnine.dev?subject=Free%2030-minute%20reliability%20call">Book a free 30-minute call</a>
+        </div>
+        <p class="cta-alt">Or start with a <a href="#audit">fixed-price reliability audit</a>.</p>
+        <p class="fine">Azure and .NET specialist. Remote, based in Dallas.</p>
+      </div>
+      <figure class="minutes">
+        <svg class="minutes-grid" viewBox="0 0 400 250" role="img" aria-labelledby="minutes-caption">
+          <defs>
+            <pattern id="minute" width="10" height="10" patternUnits="userSpaceOnUse">
+              <circle class="minute-up" cx="5" cy="5" r="3.1"></circle>
+            </pattern>
+          </defs>
+          <rect width="400" height="250" fill="url(#minute)"></rect>
+          <circle class="minute-down-mask" cx="305" cy="165" r="5.2"></circle>
+          <circle class="minute-down" cx="305" cy="165" r="3.3"></circle>
+          <circle class="minute-ping" cx="305" cy="165" r="3.3"></circle>
+        </svg>
+        <figcaption id="minutes-caption">Each dot is one minute. At 99.9% uptime, 999 of every 1,000 minutes are up and one is down. That allows about 43 minutes of downtime a month, compared with about 7 hours at 99%.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="band band-tint" aria-labelledby="problem-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="problem-title">Most small teams hear about outages from customers.</h2>
+        <p class="section-lede">Your engineers are busy shipping features. Alerts are missing or so noisy they get ignored, nobody owns on-call, and the last incident lives in a chat thread. Every outage costs revenue, trust, and a week of distracted engineers.</p>
+      </div>
+      <ul class="points">
+        <li>
+          <h3>Know before your customers do</h3>
+          <p>Monitoring and alerts on what users actually feel: failed requests, slow pages, broken sign-ins.</p>
+        </li>
+        <li>
+          <h3>Recover in minutes</h3>
+          <p>Safe deploys, canary releases, and rollbacks your team has practiced before it needs them.</p>
+        </li>
+        <li>
+          <h3>Fix it once</h3>
+          <p>Blameless postmortems and runbooks, so the same outage doesn’t happen twice.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="band band-deep" id="audit" aria-labelledby="audit-title">
+    <div class="wrap audit-grid">
+      <div class="audit-copy">
+        <h2 id="audit-title">Start with a reliability audit.</h2>
+        <p class="section-lede">A fixed-price, two-week review of how your service fails and how fast you’d know. You get a written report, a ranked fix list, and a walkthrough with your team. No retainer required.</p>
+        <p class="price-line section-lede"><strong>From $2,500, fixed.</strong> Read-only access is enough, and I’ll sign your NDA.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="mailto:hello@thirdnine.dev?subject=Reliability%20audit">Book an audit call</a>
+        </div>
+      </div>
+      <div class="audit-list">
+        <h3>What you get</h3>
+        <ul class="checks">
+          <li>Your top 10 outage risks, ranked by impact</li>
+          <li>Monitoring and alerting gaps: the alerts to add, and the noisy ones to delete</li>
+          <li>A proposed availability target (SLO) and error budget</li>
+          <li>A review of how you deploy and roll back</li>
+          <li>A backup restore test and a recovery plan</li>
+          <li>Runbooks for your most likely incidents</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="plans" aria-labelledby="plans-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="plans-title">Then keep it up, month to month.</h2>
+        <p class="section-lede">Ongoing reliability work with the engineer who did your audit. Every plan includes monitoring that I set up and tune, a monthly reliability report, and direct access to me.</p>
+      </div>
+      <div class="plans">
+        <div class="plan">
+          <h3>Monitor</h3>
+          <p class="price"><span class="amount">$1,500</span><span class="per">per month</span></p>
+          <p class="best-for">For a product with paying customers and nobody watching it.</p>
+          <ul class="checks">
+            <li>Up to 8 hours of reliability work a month</li>
+            <li>Alert tuning, so pages mean something</li>
+            <li>Incident help within 2 business hours</li>
+            <li>A monthly uptime and error-budget report</li>
+          </ul>
+        </div>
+        <div class="plan">
+          <h3>Partner</h3>
+          <p class="price"><span class="amount">$3,000</span><span class="per">per month</span></p>
+          <p class="best-for">For teams shipping every week who want reliability built in.</p>
+          <ul class="checks">
+            <li>Everything in Monitor</li>
+            <li>Up to 20 hours of reliability work a month</li>
+            <li>Incident help within 1 business hour, plus a postmortem</li>
+            <li>Safer deploys: canary releases and practiced rollbacks</li>
+            <li>A monthly review call with your team</li>
+          </ul>
+        </div>
+        <div class="plan">
+          <h3>Embedded</h3>
+          <p class="price"><span class="amount">$5,000</span><span class="per">per month</span></p>
+          <p class="best-for">For teams preparing for enterprise customers or an uptime SLA.</p>
+          <ul class="checks">
+            <li>Everything in Partner</li>
+            <li>Up to 32 hours of reliability work a month</li>
+            <li>A weekly check-in</li>
+            <li>Disaster recovery and multi-region planning</li>
+            <li>Uptime evidence for customer security reviews</li>
+            <li>An on-call rotation and runbooks your engineers can own</li>
+          </ul>
+        </div>
+      </div>
+      <div class="plan-notes">
+        <p>Hands-on help is Monday to Friday, 9 a.m. to 5 p.m. Central. Monitoring runs 24/7 and alerts your team.</p>
+        <p>Month to month with 30 days’ notice. Unused hours don’t roll over.</p>
+      </div>
+      <div class="cta-row plans-cta">
+        <a class="btn btn-primary" href="mailto:hello@thirdnine.dev?subject=Free%2030-minute%20reliability%20call">Book a free 30-minute call</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band-tint" id="about" aria-labelledby="about-title">
+    <div class="wrap">
+      <h2 id="about-title">Big-system discipline, sized for small teams.</h2>
+      <dl class="proof">
+        <div>
+          <dt>95% → 99.9%</dt>
+          <dd>Reliability I helped deliver on a 24/7 Microsoft service handling 100,000 calls a day.</dd>
+        </div>
+        <div>
+          <dt>Under 1 hour</dt>
+          <dd>Time to restore service in every Sev-1 and Sev-2 outage I resolved.</dd>
+        </div>
+        <div>
+          <dt>Two regions</dt>
+          <dd>Split traffic, canary releases, and monitors that caught failing calls.</dd>
+        </div>
+        <div>
+          <dt>Every incident documented</dt>
+          <dd>Each outage became a runbook for the next engineer.</dd>
+        </div>
+      </dl>
+      <div class="about">
+        <div class="portrait" aria-hidden="true">A</div>
+        <div class="about-text">
+          <h3>Hi, I’m Arik.</h3>
+          <p>I’m the engineer behind Third Nine. I spent 3.5 years as a software engineer at Microsoft, on a team running a suite of 24/7 services across two regions on Azure. Now I help small software teams get that discipline without hiring a full SRE team: measure what users feel, fix fast, and write down what we learned.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="how" aria-labelledby="how-title">
+    <div class="wrap">
+      <h2 id="how-title">How it works</h2>
+      <ol class="steps">
+        <li>
+          <h3>Free 30-minute call</h3>
+          <p>Tell me about your system and your last few incidents. I’ll tell you where I’d look first.</p>
+        </li>
+        <li>
+          <h3>Two-week audit</h3>
+          <p>I review your architecture, monitoring, deploys and recovery, then walk your team through what I found.</p>
+        </li>
+        <li>
+          <h3>Monthly support, if you want it</h3>
+          <p>I help your team ship the fixes and keep reliability on track, with a report every month.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="band band-tint" id="faq" aria-labelledby="faq-title">
+    <div class="wrap">
+      <h2 id="faq-title">Common questions</h2>
+      <div class="faq">
+        <details>
+          <summary>What does 99.9% uptime mean?</summary>
+          <p>At most about 43 minutes of downtime a month. It’s a common target for business software, and it leaves enough time for a person to be alerted and fix a problem.</p>
+        </details>
+        <details>
+          <summary>Do you cover nights and weekends?</summary>
+          <p>Not yet. Monitoring runs 24/7 and alerts go to your team, with runbooks so whoever is on call knows what to do. I take over during business hours.</p>
+        </details>
+        <details>
+          <summary>Do we have to be on Azure?</summary>
+          <p>No. Azure and .NET are my specialty, but monitoring, alerting, safe deploys, backups and incident response work the same way on any cloud.</p>
+        </details>
+        <details>
+          <summary>What access do you need?</summary>
+          <p>For the audit, read-only access to your cloud console, monitoring and code repositories. I’m happy to sign your NDA first.</p>
+        </details>
+        <details>
+          <summary>Why not just hire an SRE?</summary>
+          <p>You may want to eventually. A full-time hire costs more than any of these plans and takes months to find. Many teams start here, and I can help write the job description and interview when you’re ready.</p>
+        </details>
+        <details>
+          <summary>Can we cancel?</summary>
+          <p>Yes. Monthly plans are month to month with 30 days’ notice. The audit is a one-time fixed fee.</p>
+        </details>
+        <details>
+          <summary>Why “Third Nine”?</summary>
+          <p>99.9% uptime is called “three nines.” The third nine is the hard one to earn, and it’s the one I help you keep.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="contact" aria-labelledby="contact-title">
+    <div class="wrap contact">
+      <h2 id="contact-title">Find your next outage before your customers do.</h2>
+      <p class="section-lede">Book a free 30-minute call, or email <a href="mailto:hello@thirdnine.dev">hello@thirdnine.dev</a>.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="mailto:hello@thirdnine.dev?subject=Free%2030-minute%20reliability%20call">Book a free call</a>
+        <a class="btn btn-secondary" href="mailto:hello@thirdnine.dev">Email me</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <p>© 2026 Third Nine</p>
+    <p>Dallas, Texas</p>
+    <p><a href="mailto:hello@thirdnine.dev">hello@thirdnine.dev</a></p>
+  </div>
+</footer>
+</body>
+</html>
